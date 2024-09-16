@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Cross - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MOTO CROS</h1>
+        <nav>
+            <h2>ACERCA DE NOSOTROS</h2>
+            
+            <p>Nos especializamos en ofrecer las mejores soluciones para todos los apasionados del motociclismo. Somos una empresa líder en la venta de motos de alto y bajo cilindraje, garantizando calidad y rendimiento en cada modelo. Además, contamos con una amplia gama de repuestos y accesorios para satisfacer todas tus necesidades. Nuestro equipo de técnicos especializados está dedicado a brindarte el mejor servicio y asesoramiento, asegurando que tu experiencia con nosotros sea inigualable. </p>
+        </div>
+            <ul>
+      <img src="imagenes/Moto cross.png">
+      
+      
+  </div>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">TIENDA</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registrate.html">REGISTRATE</a></li>
+                      </li>
+                    <a href="#" id="cart-button" onclick="toggleCart()">
+                        <img src="imagenes/carrito.png" alt="Carrito" class="cart-icon">
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>PRODUCTOS DISPONIBLES</h2>
+        <div class="products">
+           
+            <div class="product">
+                <img src="imagenes/bwis.jpeg" alt="BWIS" class="product-image">
+                <h3>BWIS 2</h3>
+                <p>Precio: $7'000.000</p>
+                <button onclick="addToCart('BWIS 2', 7000000)">Agregar al carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imagenes/dominar 400.jpeg" alt="DOMINAR 400" class="product-image">
+                <h3>DOMINAR 400</h3>
+                <p>Precio: $18'000.000</p>
+                <button onclick="addToCart('DOMINAR 400', 18000000)">Agregar al carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imagenes/benelli 302s.jpeg" alt="BENELLI" class="product-image">
+                <h3>BENELLI 302S</h3>
+                <p>Precio: $22'000.000</p>
+                <button onclick="addToCart('BENELLI 3002S', 22000000)">Agregar al carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imagenes/DR 150.jpeg" alt="DR 150" class="product-image">
+                <h3>DR 150  </h3>
+                <p>Precio: $10'000.000</p>
+                <button onclick="addToCart('DR 150', 10000000)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/gsx-R1000.jpeg" alt="imagenes/gsx-R1000.jpeg" class="product-image">
+                <h3>GSX-R1000</h3>
+                <p>Precio: $99'000.000</p>
+                <button onclick="addToCart('GSX-R1000', 99000000)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/yamaha mt 03.jpeg" alt="YAMAHA MT 03" class="product-image">
+                <h3>YAMAHA MT 03</h3>
+                <p>Precio: $80'000.000</p>
+                <button onclick="addToCart('YAMAHA MT 03', 80000000)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/yamaha yz.jpeg" alt="imagenes/yamaha yz.jpeg" class="product-image">
+                <h3>YAMAHA YZ</h3>
+                <p>Precio: $75'000.000</p>
+                <button onclick="addToCart('YAMAHA YZ ', 75000000)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/CR4 125.jpeg" alt="CR4 125" class="product-image">
+                <h3>CR4 125</h3>
+                <p>Precio: $5'000.000</p>
+                <button onclick="addToCart('CR4 125', 5000000)">Agregar al carrito</button>
+            </div>
+
+            
+            <div class="product">
+                <img src="imagenes/DR 650.jpeg" alt="DR 650" class="product-image">
+                <h3>DR 650</h3>
+                <p>Precio: $20'000.000</p>
+                <button onclick="addToCart('DR 650', 20000000)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/CB 350D.jpeg" alt="CB 350D" class="product-image">
+                <h3>CB 350 D</h3>
+                <p>Precio: $19'000.000</p>
+                <button onclick="addToCart('CB 350D', 19000000)">Agregar al carrito</button>
+            </div>
+            
+            
+            <div class="product">
+                <img src="imagenes/imagen proyecto1.jpeg" alt="AKT" class="product-image">
+                <h3>AKT 125</h3>
+                <p>Precio: $4'000.050</p>
+                <button onclick="addToCart('AKT 125', 4000000)">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    
+    <div id="cart-popup" class="cart-popup">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button onclick="toggleCart()">Cerrar</button>
+    </div>
+    
+    <p>&copy; 2024 MOTO CROSS</p>
+</footer>      
+    <script src="script.js"></script>
+</body>
+</html>
