@@ -21,8 +21,10 @@ function addToCart(product, price) {
 
     alert(`${product} agregado al carrito!`);
 }
+boton.parentNode.removeChild(boton.parentNode);
 
 function toggleCart() {
     const cartPopup = document.getElementById('cart-popup');
     cartPopup.style.display = cartPopup.style.display === 'block' ? 'none' : 'block';
 }
+
